@@ -3,6 +3,4 @@ services:
     name: recipe-ai-backend
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
-    envVars:
-      GOOGLE_API_KEY: AIzaSyCBNbOpwExz01sUANrxq2IJ7RaA4GFPuRI   
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT  

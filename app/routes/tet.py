@@ -15,7 +15,7 @@ router = APIRouter()
 
 # Cấu hình Gemini một lần
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")  # 1.5-flash cực chuẩn cho nhận diện đồ ăn VN
+MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-live")  # 1.5-flash cực chuẩn cho nhận diện đồ ăn VN
 
 
 @router.post("/vision-test")
