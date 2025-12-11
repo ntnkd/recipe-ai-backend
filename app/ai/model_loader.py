@@ -10,7 +10,7 @@ load_dotenv()
 
 def get_genai_model():
     api_key = os.getenv("GEMINI_API_KEY")
-    model_name = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-live")
+    model_name = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
 
     genai.configure(api_key=api_key)
 
